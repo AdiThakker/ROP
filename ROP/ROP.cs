@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ROP
+﻿namespace ROP
 {
     public interface IResult<TSuccess, TFailure>
     {
@@ -47,10 +41,7 @@ namespace ROP
                 };
         }
 
-        public static Result<TSuccess, TFailure> Then<TValue, TSuccess, TFailure>(this Result<TValue, TFailure> instance, Func<TValue, Result<TSuccess, TFailure>> map)
-        {
-            return Bind(map)(instance);
-        }
+        public static Result<TSuccess, TFailure> Then<TValue, TSuccess, TFailure>(this Result<TValue, TFailure> instance, Func<TValue, Result<TSuccess, TFailure>> map) => Bind(map)(instance);
     }
 
     public class Customer
