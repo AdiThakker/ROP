@@ -1,3 +1,3 @@
 # ROP
 
-An Implementation based on [Railway Oriented Programming](https://fsharpforfunandprofit.com/rop/) 
+An sample around [Railway Oriented Programming](https://fsharpforfunandprofit.com/rop/) 
