@@ -1,3 +1,3 @@
 # ROP
 
-An sample around [Railway Oriented Programming](https://fsharpforfunandprofit.com/rop/) 
+An start sample around [Railway Oriented Programming](https://fsharpforfunandprofit.com/rop/) 
